@@ -119,9 +119,97 @@
   font-size: 0.875rem;
   color: var(--color-text-light);
   line-height: 1.7;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--color-border);
+}
+
+/* Featured card (đơn vị thực hiện) */
+.don-vi__card--featured {
+  border-color: rgba(201, 168, 76, 0.4);
+  background: linear-gradient(160deg, var(--color-cream) 0%, #fff9ee 100%);
+}
+
+.don-vi__card--featured::before {
+  transform: scaleX(1);
+}
+
+/* Address row */
+.don-vi__card-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: rgba(139, 26, 26, 0.04);
+  border-radius: var(--radius-md);
+}
+
+.don-vi__card-info-icon {
+  color: var(--color-primary);
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+/* Contact block */
+.don-vi__contact {
+  margin-bottom: 16px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.don-vi__contact-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+}
+
+.don-vi__contact-grid {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.don-vi__contact-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.825rem;
+}
+
+.don-vi__contact-label {
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.don-vi__contact-value {
+  color: var(--color-text-light);
+}
+
+.don-vi__contact-link {
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: var(--transition);
+  word-break: break-all;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+}
+
+.don-vi__contact-link:hover {
+  text-decoration-color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
 .don-vi__card-images {

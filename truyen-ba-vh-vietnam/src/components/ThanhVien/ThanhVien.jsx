@@ -2,59 +2,59 @@ import './ThanhVien.css'
 
 const members = [
   {
-    id: 'le-thi-mai-anh',
-    name: 'Lê Thị Mai Anh',
-    mssv: '23041877',
+    id: 'tran-thi-kim-anh',
+    name: 'Trần Thị Kim Anh',
+    mssv: '24040311',
     role: 'Nhóm trưởng',
-    image: 'https://static.wixstatic.com/media/994ba1_63c5220ec7aa4acc8e741bdcb34f3e60~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/L%C3%AA%20Th%E1%BB%8B%20Mai%20Anh_edited.jpg',
+    image: 'public/drive-download-20260422T195141Z-3-001/ảnh thẻ.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'le-tu-anh',
-    name: 'Lê Tú Anh',
-    mssv: '23041876',
+    id: 'tran-van-anh-1',
+    name: 'Trần Vân Anh',
+    mssv: '24042233',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_88a77f315ff2457980c3b185d2dcbb5e~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/L%C3%AA%20T%C3%BA%20Anh_edited.jpg',
+    image: 'public/VÂN ANH 24042233-20260422T195307Z-3-001/VÂN ANH 24042233/Vân Anh.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'mai-tram-anh',
-    name: 'Mai Trâm Anh',
-    mssv: '24041925',
+    id: 'tran-van-anh-2',
+    name: 'Trần Vân Anh',
+    mssv: '24042234',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_2acbbe3046fc4ce180d65191eb1d28df~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mai%20Tr%C3%A2m%20Anh.jpg',
+    image: 'public/24042234 TRẦN VÂN ANH-20260422T195228Z-3-001/24042234 TRẦN VÂN ANH/Ảnh cá nhân.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'nguyen-hoang-thu-anh',
-    name: 'Nguyễn Hoàng Thụ Anh',
-    mssv: '24040006',
+    id: 'trinh-phuong-anh',
+    name: 'Trịnh Phương Anh',
+    mssv: '24040312',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_01673979fbcb44249671977610b6b65e~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Th%E1%BB%A5%20Anh_edited.jpg',
+    image: 'public/PHƯƠNG ANH-20260422T195235Z-3-001/PHƯƠNG ANH/Ảnh cá nhân.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'nguyen-huyen-anh',
-    name: 'Nguyễn Huyền Anh',
-    mssv: '23040225',
+    id: 'truong-quynh-anh',
+    name: 'Trương Quỳnh Anh',
+    mssv: '24041219',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_1f4e174a3369472ab74a1dec08251897~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Nguy%E1%BB%85n%20Huy%E1%BB%81n%20Anh_edited.jpg',
+    image: 'public/QUỲNH ANH-20260422T195236Z-3-001/QUỲNH ANH/Ảnh cá nhân.png',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'nguyen-lan-anh',
-    name: 'Nguyễn Lan Anh',
-    mssv: '23040226',
+    id: 'vi-ngoc-anh',
+    name: 'Vi Ngọc Anh',
+    mssv: '24041944',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_4208751e69734cbf95f837348915ae76~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Lan%20Anh_edited.jpg',
+    image: 'public/NGỌC ANH-20260422T195234Z-3-001/NGỌC ANH/Ảnh cá nhân.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
-    id: 'nguyen-le-phuong-anh',
-    name: 'Nguyễn Lê Phương Anh',
-    mssv: '23040228',
+    id: 'vu-le-hong-anh',
+    name: 'Vũ Lê Hồng Anh',
+    mssv: '24041945',
     role: 'Thành viên',
-    image: 'https://static.wixstatic.com/media/994ba1_e8d38b0351c64b63be7e4f73bf3d3e10~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ph%C6%B0%C6%A1ng%20Anh_edited.jpg',
+    image: 'public/HỒNG ANH-20260422T195231Z-3-001/HỒNG ANH/quality_restoration_20260114171136266.jpg',
     socials: { facebook: '#', instagram: '#' }
   }
 ]
@@ -63,14 +63,14 @@ function SocialIcon({ type }) {
   const icons = {
     facebook: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
       </svg>
     ),
     instagram: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
       </svg>
     )
   }
@@ -90,7 +90,7 @@ export default function ThanhVien() {
           <h2 id="thanh-vien-title" className="section-title">Thành viên</h2>
           <div className="divider divider-center" />
           <p className="section-description" style={{ margin: '0 auto', textAlign: 'center' }}>
-            Nhóm 3 CNTT&TT 2024 - FLF1007-01 · Đại học Ngoại Ngữ - ĐHQGHN
+            Nhóm 14 - FLF1007 - 01 · Đại học Ngoại Ngữ - ĐHQGHN
           </p>
         </div>
 

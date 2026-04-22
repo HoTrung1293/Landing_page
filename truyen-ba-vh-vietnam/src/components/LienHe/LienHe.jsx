@@ -31,6 +31,22 @@ export default function LienHe() {
                 </div>
               </article>
 
+              <article id="lien-he-nguoi-lien-he" className="lien-he__info-card">
+                <div className="lien-he__info-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="lien-he__info-label">Người liên hệ</h3>
+                  <p className="lien-he__info-value">
+                    Trần Thị Kim Anh<br />
+                    <span style={{ fontSize: '0.85em', color: 'var(--color-text-light)' }}>Sinh viên trường ULIS</span>
+                  </p>
+                </div>
+              </article>
+
               <article id="lien-he-dien-thoai" className="lien-he__info-card">
                 <div className="lien-he__info-icon" aria-hidden="true">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -39,8 +55,8 @@ export default function LienHe() {
                 </div>
                 <div>
                   <h3 className="lien-he__info-label">Điện thoại</h3>
-                  <a href="tel:0868177162" className="lien-he__info-value lien-he__info-link">
-                    0868177162
+                  <a href="tel:0964845206" className="lien-he__info-value lien-he__info-link">
+                    0964845206
                   </a>
                 </div>
               </article>
@@ -54,8 +70,8 @@ export default function LienHe() {
                 </div>
                 <div>
                   <h3 className="lien-he__info-label">Email</h3>
-                  <a href="mailto:nguyenlananh2005.dc@gmail.com" className="lien-he__info-value lien-he__info-link">
-                    nguyenlananh2005.dc@gmail.com
+                  <a href="mailto:tranthikimanh10112006@gmail.com" className="lien-he__info-value lien-he__info-link">
+                    tranthikimanh10112006@gmail.com
                   </a>
                 </div>
               </article>
