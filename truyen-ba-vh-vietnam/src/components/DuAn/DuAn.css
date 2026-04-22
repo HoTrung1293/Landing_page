@@ -1,0 +1,217 @@
+.du-an {
+  padding: 100px 0;
+  background: var(--color-cream);
+  position: relative;
+}
+
+.du-an__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Filters */
+.du-an__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 48px;
+  padding: 0 8px;
+}
+
+.du-an__filter-btn {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.du-an__filter-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: rgba(139, 26, 26, 0.04);
+}
+
+.du-an__filter-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(139, 26, 26, 0.25);
+}
+
+/* Grid */
+.du-an__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.du-an__card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.du-an__card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(139, 26, 26, 0.15);
+}
+
+/* Card Image */
+.du-an__card-image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.du-an__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  background: var(--color-cream-dark);
+}
+
+.du-an__card:hover .du-an__card-image {
+  transform: scale(1.08);
+}
+
+.du-an__card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(var(--card-color-rgb, 90, 10, 10), 0.4) 100%
+  );
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.du-an__card:hover .du-an__card-overlay {
+  opacity: 1;
+}
+
+.du-an__card-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.du-an__card-emoji {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: var(--transition);
+}
+
+.du-an__card:hover .du-an__card-emoji {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Body */
+.du-an__card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.du-an__card-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.du-an__card-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.du-an__card-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.du-an__card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.du-an__card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition);
+}
+
+.du-an__card-btn:hover {
+  gap: 10px;
+  color: var(--color-primary-light);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .du-an__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .du-an {
+    padding: 56px 0;
+  }
+
+  .du-an__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .du-an__filter-btn {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+}
