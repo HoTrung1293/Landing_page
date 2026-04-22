@@ -6,7 +6,7 @@ const members = [
     name: 'Trần Thị Kim Anh',
     mssv: '24040311',
     role: 'Nhóm trưởng',
-    image: 'public/drive-download-20260422T195141Z-3-001/ảnh thẻ.jpg',
+    image: '/team/kim-anh.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -14,7 +14,7 @@ const members = [
     name: 'Trần Vân Anh',
     mssv: '24042233',
     role: 'Thành viên',
-    image: 'public/VÂN ANH 24042233-20260422T195307Z-3-001/VÂN ANH 24042233/Vân Anh.jpg',
+    image: '/team/van-anh-1.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -22,7 +22,7 @@ const members = [
     name: 'Trần Vân Anh',
     mssv: '24042234',
     role: 'Thành viên',
-    image: 'public/24042234 TRẦN VÂN ANH-20260422T195228Z-3-001/24042234 TRẦN VÂN ANH/Ảnh cá nhân.jpg',
+    image: '/team/van-anh-2.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -30,7 +30,7 @@ const members = [
     name: 'Trịnh Phương Anh',
     mssv: '24040312',
     role: 'Thành viên',
-    image: 'public/PHƯƠNG ANH-20260422T195235Z-3-001/PHƯƠNG ANH/Ảnh cá nhân.jpg',
+    image: '/team/phuong-anh.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -38,7 +38,7 @@ const members = [
     name: 'Trương Quỳnh Anh',
     mssv: '24041219',
     role: 'Thành viên',
-    image: 'public/QUỲNH ANH-20260422T195236Z-3-001/QUỲNH ANH/Ảnh cá nhân.png',
+    image: '/team/quynh-anh.png',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -46,7 +46,7 @@ const members = [
     name: 'Vi Ngọc Anh',
     mssv: '24041944',
     role: 'Thành viên',
-    image: 'public/NGỌC ANH-20260422T195234Z-3-001/NGỌC ANH/Ảnh cá nhân.jpg',
+    image: '/team/ngoc-anh.jpg',
     socials: { facebook: '#', instagram: '#' }
   },
   {
@@ -54,7 +54,7 @@ const members = [
     name: 'Vũ Lê Hồng Anh',
     mssv: '24041945',
     role: 'Thành viên',
-    image: 'public/HỒNG ANH-20260422T195231Z-3-001/HỒNG ANH/quality_restoration_20260114171136266.jpg',
+    image: '/team/hong-anh.jpg',
     socials: { facebook: '#', instagram: '#' }
   }
 ]
