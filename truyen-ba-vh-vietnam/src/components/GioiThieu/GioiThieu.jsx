@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import './GioiThieu.css'
+import videoGioiThieu from '../../assets/video_gioi_thieu.mov'
 
 export default function GioiThieu() {
+  const [showVideoFallback, setShowVideoFallback] = useState(false)
+
   return (
     <section id="gioi-thieu" className="gioi-thieu" aria-labelledby="gioi-thieu-title">
       <div className="container">
@@ -13,22 +17,36 @@ export default function GioiThieu() {
 
         {/* Main Content */}
         <div className="gioi-thieu__content">
-          {/* Left - Image */}
+          {/* Left - Video */}
           <div className="gioi-thieu__image-col">
             <div className="gioi-thieu__image-wrapper">
-              <img
-                src="https://static.wixstatic.com/media/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg/v1/fill/w_490,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg"
-                alt="Truyền bá văn hóa Việt Nam"
-                className="gioi-thieu__image"
-                loading="lazy"
-              />
+              {showVideoFallback ? (
+                <img
+                  src="https://static.wixstatic.com/media/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg/v1/fill/w_490,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg"
+                  alt="Truyền bá văn hóa Việt Nam"
+                  className="gioi-thieu__image"
+                  loading="lazy"
+                />
+              ) : (
+                <video
+                  className="gioi-thieu__image"
+                  src={videoGioiThieu}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="Truyền bá văn hóa Việt Nam"
+                  onError={() => setShowVideoFallback(true)}
+                />
+              )}
               <div className="gioi-thieu__image-decor" aria-hidden="true" />
             </div>
 
             {/* Quote box */}
             <div className="gioi-thieu__quote">
               <span className="gioi-thieu__quote-mark">"</span>
-              <p>Văn hóa là hồn của dân tộc, là sức mạnh trường tồn của một quốc gia.</p>
+              <p>Mở bản đồ, ghim kỷ niệm - Cùng Hanoi's Memory Map viết tiếp hành trình của riêng bạn.</p>
             </div>
           </div>
 
@@ -36,18 +54,18 @@ export default function GioiThieu() {
           <div className="gioi-thieu__text-col">
             <article className="gioi-thieu__article">
               <p className="gioi-thieu__lead">
-                Truyền bá văn hóa Việt với sinh viên đại học Ngoại Ngữ - ĐHQGHN
+                Ghim ký ức nối tâm hồn
               </p>
 
               <div className="gioi-thieu__blocks">
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🌏</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Bối cảnh toàn cầu hóa</h3>
+                    <h3 className="gioi-thieu__block-title">Tính cộng đồng cao</h3>
                     <p className="gioi-thieu__block-text">
-                      Trong thời kỳ toàn cầu hoá, hiện đại hoá như hiện nay, vấn đề đưa văn hoá Việt Nam
-                      đến mọi đối tượng đã luôn là một thách thức khi không phải ai cũng quan tâm đến điều ấy.
-                      Việc tìm kiếm những phương thức hiệu quả để truyền bá văn hóa là vô cùng cần thiết.
+                      Người dùng vừa là người tiêu thụ thông tin, vừa là người cung cấp thông tin,
+                      tạo thành một mạng lưới chia sẻ.Kết nối người dùng dựa trên địa điểm, 
+                      sở thích và hoạt động chung.Có tính năng tìm bạn đồng hành, giảm cảm giác cô đơn.
                     </p>
                   </div>
                 </div>
@@ -55,11 +73,9 @@ export default function GioiThieu() {
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🎭</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Chương trình đa dạng</h3>
+                    <h3 className="gioi-thieu__block-title">Thông tin đa dạng, độc đáo</h3>
                     <p className="gioi-thieu__block-text">
-                      Để truyền bá văn hoá Việt Nam một cách hiệu quả, việc xây dựng nhiều chương trình,
-                      sự kiện phong phú và đa dạng là vô cùng cần thiết. Những hoạt động này giúp kết nối
-                      thế hệ trẻ với di sản văn hóa dân tộc một cách sinh động và hấp dẫn.
+                       Có thể tìm thấy những địa điểm “ẩn”, ít phổ biến hoặc chưa được cập nhật trên các nền tảng lớn như Google Maps.Cập nhật nhanh, linh hoạt: Người dùng có thể đăng bài, review, hình ảnh ngay khi trải nghiệm, giúp thông tin luôn mới.
                     </p>
                   </div>
                 </div>
@@ -67,11 +83,9 @@ export default function GioiThieu() {
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🌱</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Lợi ích cho sinh viên</h3>
+                    <h3 className="gioi-thieu__block-title">Kết hợp bản đồ và trải nghiệm cá nhân, Mang tính nhân văn</h3>
                     <p className="gioi-thieu__block-text">
-                      Thông qua dự án, sinh viên sẽ nhận được nhiều lợi ích thiết thực. Họ sẽ có hiểu biết
-                      sâu sắc hơn về văn hóa Việt Nam, trân trọng các giá trị truyền thống và trở thành
-                      những đại sứ văn hóa tích cực trong cộng đồng.
+                      Không chỉ định vị mà còn lưu giữ ký ức, cảm xúc theo địa điểm. Gắn công nghệ với cảm xúc, cộng đồng và trải nghiệm sống.
                     </p>
                   </div>
                 </div>

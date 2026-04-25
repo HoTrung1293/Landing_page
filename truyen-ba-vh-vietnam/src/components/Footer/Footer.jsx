@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Footer.css'
+import logoImg from '../../assets/logo.png'
 
 const footerLinks = {
   'Trang chủ': [
@@ -76,11 +77,11 @@ export default function Footer() {
             <div className="footer__brand">
               <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} className="footer__logo">
                 <img
-                  src="https://static.wixstatic.com/media/994ba1_78279e5dd75e49acb8012d5cbd1e3531~mv2.png/v1/crop/x_0,y_38,w_500,h_383/fill/w_158,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20v%C4%83n%20h%C3%B3a.png"
+                  src={logoImg}
                   alt="Logo Truyền bá Văn hóa Việt"
                   className="footer__logo-img"
                 />
-                <span className="footer__logo-text">Truyền bá VH Việt</span>
+                <span className="footer__logo-text">Ghim ký ức nối tâm hồn</span>
               </a>
               <p className="footer__brand-desc">
                 Truyền bá và gìn giữ văn hóa Việt Nam thông qua các dự án sáng tạo của sinh viên Đại học Ngoại Ngữ - ĐHQGHN.

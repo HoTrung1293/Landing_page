@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import './Header.css'
+import logoImg from '../../assets/logo.png'
 
 const navItems = [
   { id: 'trang-chu', label: 'Trang chủ', href: '#hero' },
@@ -72,11 +73,11 @@ export default function Header() {
       <div className="header__logo">
         <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} aria-label="Trang chủ - Truyền bá VH Việt">
           <img
-            src="https://static.wixstatic.com/media/994ba1_78279e5dd75e49acb8012d5cbd1e3531~mv2.png/v1/crop/x_0,y_38,w_500,h_383/fill/w_158,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20v%C4%83n%20h%C3%B3a.png"
+            src={logoImg}
             alt="Logo Truyền bá Văn hóa Việt"
             className="header__logo-img"
           />
-          <span className="header__logo-text">Truyền bá VH Việt</span>
+          <span className="header__logo-text">Ghim ký ức nối tâm hồn</span>
         </a>
       </div>
 

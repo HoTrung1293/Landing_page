@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Content */}
       <div className="hero__content container">
         <div className="hero__text">
-          <p className="hero__accent animate-fade-up">✦ Nhóm 3 CNTT&TT 2024 ✦</p>
+          <p className="hero__accent animate-fade-up">✦ Nhóm 14 - FLF1007 - 01 ✦</p>
           <h1 className="hero__title animate-fade-up" style={{ animationDelay: '0.1s' }}>
             ĐI ĐÂU KHÓ CÓ
             <span className="hero__title-highlight"> HANOI’S MEMORY MAP</span>
@@ -34,11 +34,7 @@ export default function Hero() {
             LO
           </h1>
           <p className="hero__subtitle animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            Với sinh viên Đại học Ngoại Ngữ - ĐHQGHN
-          </p>
-          <p className="hero__desc animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            Khám phá vẻ đẹp phong phú của văn hóa Việt Nam qua các dự án sáng tạo,
-            kết nối thế hệ trẻ với di sản dân tộc và lan tỏa giá trị truyền thống.
+            Ghim lại những mảnh ghép ký ức qua nền tảng bản đồ số, kết nối con người với nhau và lan tỏa những câu chuyện nhân văn ẩn sau mỗi góc phố Thủ đô
           </p>
           <div className="hero__actions animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <button
@@ -73,18 +69,18 @@ export default function Hero() {
           {/* Stats */}
           <div className="hero__stats animate-fade-up" style={{ animationDelay: '0.5s' }}>
             <div className="hero__stat">
-              <span className="hero__stat-number">8</span>
-              <span className="hero__stat-label">Di sản thế giới</span>
+              <span className="hero__stat-number">36</span>
+              <span className="hero__stat-label">Phố phường</span>
             </div>
             <div className="hero__stat-divider" aria-hidden="true" />
             <div className="hero__stat">
-              <span className="hero__stat-number">7</span>
-              <span className="hero__stat-label">Thành viên</span>
+              <span className="hero__stat-number">+100</span>
+              <span className="hero__stat-label">Ký ức được ghim</span>
             </div>
             <div className="hero__stat-divider" aria-hidden="true" />
             <div className="hero__stat">
               <span className="hero__stat-number">∞</span>
-              <span className="hero__stat-label">Văn hóa Việt</span>
+              <span className="hero__stat-label">Cảm xúc</span>
             </div>
           </div>
         </div>
