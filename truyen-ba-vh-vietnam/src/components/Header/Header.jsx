@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
 import './Header.css'
-import logoImg from '../../assets/logo.png'
 
 const navItems = [
   { id: 'trang-chu', label: 'Trang chủ', href: '#hero' },
@@ -73,7 +72,7 @@ export default function Header() {
       <div className="header__logo">
         <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} aria-label="Trang chủ - Truyền bá VH Việt">
           <img
-            src={logoImg}
+            src="/Logo.png"
             alt="Logo Truyền bá Văn hóa Việt"
             className="header__logo-img"
           />

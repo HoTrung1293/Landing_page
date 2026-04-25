@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './Footer.css'
-import logoImg from '../../assets/logo.png'
 
 const footerLinks = {
   'Trang chủ': [
@@ -77,7 +76,7 @@ export default function Footer() {
             <div className="footer__brand">
               <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} className="footer__logo">
                 <img
-                  src={logoImg}
+                  src="/Logo.png"
                   alt="Logo Truyền bá Văn hóa Việt"
                   className="footer__logo-img"
                 />
