@@ -200,11 +200,20 @@ const sampleMemories = [
 function MemoryCarousel({ images, memId }) {
   const [idx, setIdx] = useState(0)
   if (!images || images.length === 0) return null
+
+  const resolveImageSrc = (rawSrc) => {
+    if (!rawSrc) return ''
+    if (/^https?:\/\//i.test(rawSrc)) return rawSrc
+
+    const normalized = rawSrc.startsWith('public/') ? `/${rawSrc.slice(7)}` : rawSrc
+    return encodeURI(normalized)
+  }
+
   const prev = (e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length) }
   const next = (e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length) }
   return (
     <div className="mem-carousel">
-      <img src={images[idx]} alt={`Ảnh ${idx + 1}`} className="mem-carousel__img" loading="lazy" />
+      <img src={resolveImageSrc(images[idx])} alt={`Ảnh ${idx + 1}`} className="mem-carousel__img" loading="lazy" />
       {images.length > 1 && (
         <>
           <button className="mem-carousel__btn mem-carousel__btn--prev" onClick={prev} aria-label="Ảnh trước">

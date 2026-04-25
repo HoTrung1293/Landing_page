@@ -9,13 +9,6 @@ const footerLinks = {
     { label: 'Phản hồi', href: '#phan-hoi' },
     { label: 'Nội dung', href: '#du-an' }
   ],
-  'Nội dung': [
-    { label: 'Quảng bá văn hóa', href: '#' },
-    { label: 'Đại sứ văn hóa', href: '#' },
-    { label: 'Truyền bá văn hóa', href: '#' },
-    { label: 'Văn hóa truyền thống', href: '#' },
-    { label: 'Giữ gìn bản sắc văn hóa', href: '#' }
-  ]
 }
 
 const socialLinks = [
@@ -48,6 +41,7 @@ const socialLinks = [
 export default function Footer() {
   const [email, setEmail] = useState('')
   const [subscribed, setSubscribed] = useState(false)
+  const navGroupCount = Object.keys(footerLinks).length
 
   const handleSubscribe = (e) => {
     e.preventDefault()
@@ -71,7 +65,7 @@ export default function Footer() {
       {/* Main footer content */}
       <div className="footer__main">
         <div className="container">
-          <div className="footer__grid">
+          <div className={`footer__grid ${navGroupCount <= 1 ? 'footer__grid--compact' : ''}`}>
             {/* Brand */}
             <div className="footer__brand">
               <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} className="footer__logo">
@@ -83,7 +77,7 @@ export default function Footer() {
                 <span className="footer__logo-text">Ghim ký ức nối tâm hồn</span>
               </a>
               <p className="footer__brand-desc">
-                Truyền bá và gìn giữ văn hóa Việt Nam thông qua các dự án sáng tạo của sinh viên Đại học Ngoại Ngữ - ĐHQGHN.
+                Ghim lại những mảnh ghép ký ức qua nền tảng bản đồ số, kết nối con người với nhau và lan tỏa những câu chuyện nhân văn ẩn sau mỗi góc phố Thủ đô.
               </p>
 
               {/* Social */}
@@ -164,7 +158,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container">
           <p className="footer__copyright">
-            © 2024 by Truyền bá văn hóa Việt. All rights reserved.
+            © 2026 by Ha Noi Memory Map. All rights reserved.
           </p>
           <div className="footer__bottom-links">
             <a href="#" className="footer__bottom-link">Chính sách bảo mật</a>

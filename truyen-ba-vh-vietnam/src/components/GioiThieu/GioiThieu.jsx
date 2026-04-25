@@ -61,11 +61,9 @@ export default function GioiThieu() {
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🌏</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Tính cộng đồng cao</h3>
+                    <h3 className="gioi-thieu__block-title">Đặt ra vấn đề</h3>
                     <p className="gioi-thieu__block-text">
-                      Người dùng vừa là người tiêu thụ thông tin, vừa là người cung cấp thông tin,
-                      tạo thành một mạng lưới chia sẻ.Kết nối người dùng dựa trên địa điểm, 
-                      sở thích và hoạt động chung.Có tính năng tìm bạn đồng hành, giảm cảm giác cô đơn.
+                      Dù các ứng dụng bản đồ hiện nay đã tối ưu hóa việc định vị và tìm kiếm, chúng vẫn thiếu đi chiều sâu về cảm xúc. Giới trẻ, đặc biệt là Gen Z, đang cần một nền tảng không chỉ để dẫn đường mà còn để số hóa những ký ức cá nhân gắn liền với từng góc phố. Đồng thời, đây cũng là giải pháp giúp họ vượt qua rào cản tâm lý và sự cô đơn trong hành trình tự mình khám phá đô thị
                     </p>
                   </div>
                 </div>
@@ -73,9 +71,9 @@ export default function GioiThieu() {
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🎭</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Thông tin đa dạng, độc đáo</h3>
+                    <h3 className="gioi-thieu__block-title">Giải pháp</h3>
                     <p className="gioi-thieu__block-text">
-                       Có thể tìm thấy những địa điểm “ẩn”, ít phổ biến hoặc chưa được cập nhật trên các nền tảng lớn như Google Maps.Cập nhật nhanh, linh hoạt: Người dùng có thể đăng bài, review, hình ảnh ngay khi trải nghiệm, giúp thông tin luôn mới.
+                       Hanoi’s Memory Map ra đời từ sự kết hợp giữa công nghệ bản đồ số và yếu tố nhân văn. Dự án tập trung giải quyết sự thiếu hụt trong việc tích hợp dữ liệu địa lý - ký ức cá nhân - kết nối xã hội, tạo ra một bản đồ nơi mỗi địa điểm đều chứa đựng những câu chuyện và cảm xúc riêng biệt.
                     </p>
                   </div>
                 </div>
@@ -83,9 +81,32 @@ export default function GioiThieu() {
                 <div className="gioi-thieu__block">
                   <div className="gioi-thieu__block-icon" aria-hidden="true">🌱</div>
                   <div>
-                    <h3 className="gioi-thieu__block-title">Kết hợp bản đồ và trải nghiệm cá nhân, Mang tính nhân văn</h3>
+                    <h3 className="gioi-thieu__block-title">Sản phẩm</h3>
                     <p className="gioi-thieu__block-text">
-                      Không chỉ định vị mà còn lưu giữ ký ức, cảm xúc theo địa điểm. Gắn công nghệ với cảm xúc, cộng đồng và trải nghiệm sống.
+                      - Hệ thống Memory Pins để lưu trữ kỷ niệm 
+                      
+                    </p>
+                    <p className="gioi-thieu__block-text">
+                      - Tính năng Find a Buddy giúp tìm kiếm bạn đồng hành an toàn.
+                      
+                    </p>
+                  </div>
+                </div>
+                 <div className="gioi-thieu__block">
+                  <div className="gioi-thieu__block-icon" aria-hidden="true">📍</div>
+                  <div>
+                    <h3 className="gioi-thieu__block-title">Mục tiêu</h3>
+                    <p className="gioi-thieu__block-text">
+                      - Xây dựng một bản đồ cảm xúc sống động giúp người dùng gắn kết sâu sắc hơn với không gian thành phố.
+                    </p>
+                  </div>
+                </div>
+                 <div className="gioi-thieu__block">
+                  <div className="gioi-thieu__block-icon" aria-hidden="true">👥</div>
+                  <div>
+                    <h3 className="gioi-thieu__block-title">Giải pháp</h3>
+                    <p className="gioi-thieu__block-text">
+                       Dự án giúp giảm cảm giác cô đơn và thúc đẩy cộng đồng kết nối dựa trên sở thích thực tế. Không chỉ hỗ trợ sinh viên và khách du lịch khám phá Hà Nội một cách chân thực, dự án còn biến công nghệ thành công cụ mang tính nhân văn, biến mỗi tọa độ thành một điểm chạm của ký ức và sự sẻ chia.
                     </p>
                   </div>
                 </div>
