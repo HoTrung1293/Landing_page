@@ -89,7 +89,7 @@ export default function Hero() {
         <div className="hero__image animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <div className="hero__image-frame">
             <img
-              src="https://i.pinimg.com/736x/3d/d5/d2/3dd5d27ce5cae3c2319bae835a27972a.jpg"
+              src="https://i.pinimg.com/736x/0f/4e/46/0f4e46f407b6443333a9080b6f15395b.jpg"
               alt="Sinh viên ULIS trải nghiệm văn hóa Việt Nam"
               className="hero__image-main"
               loading="eager"
