@@ -29,7 +29,7 @@ export default function Hero() {
           <p className="hero__accent animate-fade-up">✦ Nhóm 14 - FLF1007 - 01 ✦</p>
           <h1 className="hero__title animate-fade-up" style={{ animationDelay: '0.1s' }}>
             ĐI ĐÂU KHÓ CÓ
-            <span className="hero__title-highlight"> HANOI’S MEMORY MAP</span>
+            <span className="hero__title-highlight"> HANOI MEMORY MAP</span>
             <br />
             LO
           </h1>

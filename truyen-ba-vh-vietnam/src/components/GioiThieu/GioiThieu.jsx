@@ -73,7 +73,7 @@ export default function GioiThieu() {
                   <div>
                     <h3 className="gioi-thieu__block-title">Giải pháp</h3>
                     <p className="gioi-thieu__block-text">
-                       Hanoi’s Memory Map ra đời từ sự kết hợp giữa công nghệ bản đồ số và yếu tố nhân văn. Dự án tập trung giải quyết sự thiếu hụt trong việc tích hợp dữ liệu địa lý - ký ức cá nhân - kết nối xã hội, tạo ra một bản đồ nơi mỗi địa điểm đều chứa đựng những câu chuyện và cảm xúc riêng biệt.
+                       Hanoi Memory Map ra đời từ sự kết hợp giữa công nghệ bản đồ số và yếu tố nhân văn. Dự án tập trung giải quyết sự thiếu hụt trong việc tích hợp dữ liệu địa lý - ký ức cá nhân - kết nối xã hội, tạo ra một bản đồ nơi mỗi địa điểm đều chứa đựng những câu chuyện và cảm xúc riêng biệt.
                     </p>
                   </div>
                 </div>

@@ -121,7 +121,7 @@ export default function Footer() {
             {/* Newsletter */}
             <div className="footer__newsletter">
               <h3 className="footer__nav-title">NHẬN THÔNG TIN TỪ</h3>
-              <p className="footer__newsletter-name">HANOI’S MEMORY MAP</p>
+              <p className="footer__newsletter-name">HANOI MEMORY MAP</p>
               {!subscribed ? (
                 <form
                   id="newsletter-form"
