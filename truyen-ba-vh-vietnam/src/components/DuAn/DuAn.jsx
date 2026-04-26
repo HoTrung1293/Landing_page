@@ -287,7 +287,7 @@ export default function DuAn() {
         {/* ── HEADER ── */}
         <div className="du-an__header">
           <p className="section-subtitle">✦ Hà Nội trong ký ức ✦</p>
-          <h2 id="du-an-title" className="section-title">Đi đâu khó có — Hanoi's Memory Map</h2>
+          <h2 id="du-an-title" className="section-title">Đi đâu khó có — Hanoi Memory Map</h2>
           <div className="divider divider-center" />
           <p className="section-description" style={{ margin: '0 auto', textAlign: 'center' }}>
             Khám phá những địa điểm gắn liền với ký ức của người Hà Nội — chia sẻ kỷ niệm của bạn và lưu giữ hồn phố.

@@ -46,7 +46,7 @@ export default function GioiThieu() {
             {/* Quote box */}
             <div className="gioi-thieu__quote">
               <span className="gioi-thieu__quote-mark">"</span>
-              <p>Mở bản đồ, ghim kỷ niệm - Cùng Hanoi's Memory Map viết tiếp hành trình của riêng bạn.</p>
+              <p>Mở bản đồ, ghim kỷ niệm - Cùng Hanoi Memory Map viết tiếp hành trình của riêng bạn.</p>
             </div>
           </div>
 
