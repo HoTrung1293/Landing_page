@@ -71,7 +71,7 @@ export default function Footer() {
               <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} className="footer__logo">
                 <img
                   src="/Logo.png"
-                  alt="Logo Truyền bá Văn hóa Việt"
+                  alt="Logo Hanoi Memory Map"
                   className="footer__logo-img"
                 />
                 <span className="footer__logo-text">Ghim ký ức nối tâm hồn</span>

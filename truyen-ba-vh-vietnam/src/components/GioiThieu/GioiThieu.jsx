@@ -23,7 +23,7 @@ export default function GioiThieu() {
               {showVideoFallback ? (
                 <img
                   src="https://static.wixstatic.com/media/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg/v1/fill/w_490,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/994ba1_7df14d1a5b3040cd9a6749b1d3cb3015f000.jpg"
-                  alt="Truyền bá văn hóa Việt Nam"
+                  alt="Hanoi Memory Map - Hình ảnh giới thiệu"
                   className="gioi-thieu__image"
                   loading="lazy"
                 />
@@ -36,7 +36,7 @@ export default function GioiThieu() {
                   loop
                   playsInline
                   preload="metadata"
-                  aria-label="Truyền bá văn hóa Việt Nam"
+                  aria-label="Hanoi Memory Map - Video giới thiệu"
                   onError={() => setShowVideoFallback(true)}
                 />
               )}

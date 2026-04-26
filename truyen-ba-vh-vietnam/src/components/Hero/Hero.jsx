@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="hero__bg">
         <img
           src="https://i.pinimg.com/1200x/87/a5/38/87a53838ee9cd3eef9fe70b1411bb6ff.jpg"
-          alt="Văn hóa Việt Nam - Hình ảnh bìa trang chủ"
+          alt="Hanoi Memory Map - Hình ảnh bìa trang chủ"
           className="hero__bg-img"
         />
         <div className="hero__bg-overlay" />
@@ -90,7 +90,7 @@ export default function Hero() {
           <div className="hero__image-frame">
             <img
               src="https://i.pinimg.com/736x/0f/4e/46/0f4e46f407b6443333a9080b6f15395b.jpg"
-              alt="Sinh viên ULIS trải nghiệm văn hóa Việt Nam"
+              alt="Sinh viên ULIS chia sẻ ký ức Hà Nội"
               className="hero__image-main"
               loading="eager"
             />

@@ -70,10 +70,10 @@ export default function Header() {
     <header id="site-header" className={`header ${scrolled ? 'header--scrolled' : ''}`} role="banner">
       {/* Logo */}
       <div className="header__logo">
-        <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} aria-label="Trang chủ - Truyền bá VH Việt">
+        <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero') }} aria-label="Trang chủ - Hanoi Memory Map">
           <img
             src="/Logo.png"
-            alt="Logo Truyền bá Văn hóa Việt"
+            alt="Logo Hanoi Memory Map"
             className="header__logo-img"
           />
           <span className="header__logo-text">Ghim ký ức nối tâm hồn</span>
